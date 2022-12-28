@@ -1,0 +1,31 @@
+
+.link-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.link-social__item {
+    width: 44px;
+    height: 44px;
+}
+
+.link-social__href {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: var(--color-social);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-social__href:hover,
+.link-social__href:focus {
+    background-color: var(--color-third);
+    fill: var(--color-primary);
+}
