@@ -8,31 +8,29 @@
     letter-spacing: 0.03em;
 
     color: #212121;
-}
+    &__field {
+            display: flex;
+    
+            flex-direction: column;
+            margin: 0;
+            margin-top: 10px;
+        }
+    
+        &__field input:focus {
+            border-color: var(--color-third);
+            cursor: pointer;
+        }
 
-.form__field {
-    display: flex;
-
-    flex-direction: column;
-    margin: 0;
-    margin-top: 10px;
-}
-
-.form__field input:focus {
-    border-color: var(--color-third);
-    cursor: pointer;
-}
-
-.form__field input:focus+.form__svg {
+&__field input:focus+.form__svg {
     fill: var(--color-third);
 }
 
-.form__field textarea:focus {
+&__field textarea:focus {
     border-color: var(--color-third);
     cursor: pointer;
 }
 
-.form__field input {
+&__field input {
     margin: 0;
     padding-left: 42px;
     padding-right: 12px;
@@ -45,8 +43,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__field label {
+&__field label {
     margin-bottom: 4px;
 
     font-family: "Roboto";
@@ -61,7 +58,7 @@
     color: #757575;
 }
 
-.form__field textarea {
+&__field textarea {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -77,33 +74,36 @@
     padding: 12px 16px;
     outline: none;
 }
-
-.form__field-div {
-    position: relative;
-}
-
-.size {
-    margin-top: 12px;
-}
-
-.form__svg {
+&__svg {
     position: absolute;
     top: 50%;
     transform: translatey(-50%);
     left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+&__field-div {
+    position: relative;
+}
+&__button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+}
+
+.size {
+    margin-top: 12px;
+}
+
 
 .form__checkbox input[type="checkbox"] {
     width: 16px;
     height: 15px;
     border-radius: 2px;
+    
 }
 
-.form__checkbox {
-    margin-top: 20px;
-    display: flex;
-}
+
 
 .checkbox__hidden {
     appearance: none;
@@ -142,11 +142,6 @@
     cursor: pointer;
 }
 
-.form__button {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
 
 .button__text {
     width: 200px;
