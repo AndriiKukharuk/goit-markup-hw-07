@@ -1,22 +1,8 @@
-.discribe__title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-}
-
 .discribe {
-    margin-left: 93px;
-    width: 570px;
-    height: 86px;
-}
-
-.discribe__input input {
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+  &__input input {
     width: 358px;
     height: 50px;
     margin-left: 0;
@@ -35,20 +21,25 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
-}
+  }
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-.discribe__input {
+    color: #ffffff;
+  }
+
+  &__input {
     display: flex;
     gap: 12px;
     margin-top: 20px;
-}
-
-.telegram-bot form {
-    width: 0px;
-    margin: 0px;
-}
-
-.discribe__button {
+  }
+  &__button {
     display: flex;
     gap: 10px;
     width: 200px;
@@ -71,14 +62,14 @@
     letter-spacing: 0.06em;
 
     color: var(--color-primary);
-}
-
-.discribe__button:focus,
-.discribe__button:hover {
+  }
+  &__button:focus,
+  &__button:hover {
     color: var(--color-primary);
     cursor: pointer;
-}
+  }
 
-.discribe__svg {
+  &__svg {
     fill: var(--color-primary);
+  }
 }
