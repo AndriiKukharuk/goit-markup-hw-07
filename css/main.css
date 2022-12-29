@@ -553,19 +553,17 @@ form {
   margin-right: auto;
   padding: 60px 0;
 }
-.footer__adress {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-top: 28px;
+
+.footer p {
+  color: var(--color-primary);
 }
-.footer__adress__flex {
+
+.footter__flex {
   display: flex;
   align-items: baseline;
 }
-.footer__adress__logo {
+
+.footer__logo {
   color: var(--color-third);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -573,20 +571,18 @@ form {
   line-height: 1.19;
   text-decoration: none;
 }
-.footer__adress__auth-nav {
-  margin: 0px;
-  padding: 0px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer p {
-  color: var(--color-primary);
-}
 
 .logo__name {
   color: var(--color-primary);
+}
+
+.footer__adress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 28px;
 }
 
 .adress__name {
@@ -598,6 +594,14 @@ form {
 .header__auth-nav.auth-nav__link:focus,
 .footer__auth-nav {
   color: var(--color-third);
+}
+
+.footer__auth-nav {
+  margin: 0px;
+  padding: 0px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__auth-nav li {

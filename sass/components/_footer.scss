@@ -5,43 +5,37 @@
   margin-left: auto;
   margin-right: auto;
   padding: 60px 0;
-  &__adress {
-    font-family: "Roboto";
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-top: 28px;
-
-    &__flex {
-      display: flex;
-      align-items: baseline;
-    }
-
-    &__logo {
-      color: var(--color-third);
-      font-family: Raleway, sans-serif;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      text-decoration: none;
-    }
-    &__auth-nav {
-      margin: 0px;
-      padding: 0px;
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
 }
 
 .footer p {
   color: var(--color-primary);
 }
 
+.footter__flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  color: var(--color-third);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
 .logo__name {
   color: var(--color-primary);
+}
+
+.footer__adress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 28px;
 }
 
 .adress__name {
@@ -53,6 +47,14 @@
 .header__auth-nav.auth-nav__link:focus,
 .footer__auth-nav {
   color: var(--color-third);
+}
+
+.footer__auth-nav {
+  margin: 0px;
+  padding: 0px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__auth-nav li {
