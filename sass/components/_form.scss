@@ -7,6 +7,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
+    
     color: #212121;
     &__field {
             display: flex;
@@ -90,7 +91,10 @@
     justify-content: center;
 }
 }
-
+.form__checkbox {
+    margin-top: 20px;
+    text-align: center;
+}
 .size {
     margin-top: 12px;
 }
@@ -116,7 +120,7 @@
     border: 2px solid var(--color-secondary);
     border-radius: 2px;
     fill: var(--color-primary);
-    margin-top: 4.5px;
+    
 }
 
 .checkbox__hidden:checked+.checkbox__icon {
