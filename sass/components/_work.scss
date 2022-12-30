@@ -16,32 +16,32 @@
             gap: 30px;
             padding-left: 0px;
         }
+                &__img {
+                    position: relative;
+                }
+        
+                &__coment {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 70px;
+                    background-color: rgba(47, 48, 58, 0.8);
+                }
+        
+                &__coment>p {
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    padding-top: 27px;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    margin: 0;
+                    color: #ffffff;
+                }
 }
 
 
 
-.flex__img {
-    position: relative;
-}
-
-.flex__coment {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-}
-
-.flex__coment>p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    padding-top: 27px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin: 0;
-    color: #ffffff;
-}
